@@ -1,0 +1,29 @@
+version: "3.3"
+services:
+  db:
+    image: postgres:14
+    container_name: db
+    volumes:
+      - pg_data:/var/lib/postgresql/data
+    ports:
+      - "5432:5432"
+    env_file:
+      - .env
+    restart: unless-stopped
+  web:
+    build:
+      context: .
+    container_name: web
+    volumes:
+      - .:/code
+    command: ["uvicorn", "main:app", "--host", "0.0.0.0", "--port", "8000", "--reload"]
+    env_file:
+      - .env
+    restart: unless-stopped
+    ports:
+      - "8000:8000"
+    depends_on:
+      - db
+
+volumes:
+  pg_data:

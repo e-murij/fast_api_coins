@@ -1,0 +1,98 @@
+{
+  "type": [
+    {
+      "name": "монеты"
+    },
+    {
+      "name": "бумажные"
+    },
+    {
+      "name": "чеки"
+    }
+  ],
+  "currency": [
+    {
+      "name": "рубль"
+    },
+    {
+      "name": "франк"
+    },
+    {
+      "name": "марка"
+    }
+  ],
+  "md": [
+    {
+      "name": "столичный двор"
+    },
+    {
+      "name": "московский двор"
+    },
+    {
+      "name": "немецкий двор"
+    }
+  ],
+  "state": [
+    {
+      "name": "Россия"
+    },
+    {
+      "name": "Франция"
+    },
+    {
+      "name": "Германия"
+    }
+  ],
+  "user": [
+    {
+      "username": "admin",
+      "password": "admin",
+      "is_superuser": true
+    },
+    {
+      "username": "Mike",
+      "password": "Mike",
+      "is_superuser": false
+    },
+    {
+      "username": "Kate",
+      "password": "Kate",
+      "is_superuser": false
+    }
+  ],
+  "coins": [
+    {
+      "description": "золотая монета",
+      "type_id": 1,
+      "currency_id": 1,
+      "nominal_value": "4000",
+      "md_id": 1,
+      "state_id": 1,
+      "year": "1900",
+      "serial_number": "1122",
+      "user_id": 2
+    },
+    {
+      "description": "красивая марка",
+      "type_id": 2,
+      "currency_id": 2,
+      "nominal_value": "4000",
+      "md_id": 2,
+      "state_id": 2,
+      "year": "1900",
+      "serial_number": "1122",
+      "user_id": 2
+    },
+    {
+      "description": "чек",
+      "type_id": 2,
+      "currency_id": 2,
+      "nominal_value": "4000",
+      "md_id": 2,
+      "state_id": 2,
+      "year": "1900",
+      "serial_number": "1122",
+      "user_id": 3
+    }
+  ]
+}
